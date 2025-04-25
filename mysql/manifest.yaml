@@ -37,17 +37,17 @@ metadata:
 spec:
   selector:
     matchLabels:
-      project: expense
-      component: mysql
-      tier: db    
+     project: expense
+     component: mysql
+     tier: db    
   serviceName: "mysql-headless" # head less service name
   replicas: 2 # by default is 1
   template:
     metadata:
       labels:
-        project: expense
-        component: mysql
-        tier: db
+       project: expense
+       component: mysql
+       tier: db
     spec:
       containers:
       - name: mysql
